@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<script>
+  // Forward anything under the old GPCompaRe address to the same path on the new one.
+  var m = location.pathname.match(/^\/gpcompreports(\/.*)?$/i);
+  if (m) location.replace("/GPCompaRe" + (m[1] || "/") + location.search + location.hash);
+</script>
+</head>
+<body style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem;">
+<p>Page not found. The GPCompaRe database is at <a href="https://tggr-lab.github.io/GPCompaRe/">tggr-lab.github.io/GPCompaRe</a>.</p>
+</body>
+</html>
